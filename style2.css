@@ -1,0 +1,80 @@
+:root {
+    --white: #F1F7FF;
+    --blue: #48ACF0;
+    --green: #23CE6B;
+    --red: #9B191d;
+    --dark: #13171A;
+    --darkGrey: #4A4C4F;
+    --lightGrey: #A3A7AF;
+    --bg-color: #13171A;
+    --card-color: #13171A;
+    --darkpurple: #1b152e;
+    /*get trolled future me*/
+    --pueple: #7b64d5;
+    --darkcyan: #001f27;
+    --cyan: #27d1dd;
+}
+
+body {
+    font-family: 'poppins';
+    background-color: var(--dark);
+    color: var(--white);
+    background-image: url("minimaleum2.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+#container_main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#container_main {
+    width: 666px;
+    text-align: center;
+    background-color: var(--darkpurple);
+    border-left: solid var(--pueple) 4px;
+}
+
+#opacitee {
+    width: 1500px;
+    height: 800px;
+    background-color: var(--dark);
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+}
+
+#backbutton {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 4px solid var(--pueple);
+    background-color: var(--darkpurple);
+    height: 50px;
+    width: 200px;
+}
+
+#zuruck {
+    background-color: var(--darkpurple);
+    color: white;
+    
+}
+
+#article_container {
+    width: 1000px;
+    height: 425px;
+    background-color: var(--darkcyan);
+    border-left: solid 4px var(--cyan);
+    margin: 50px;
+}
+
+#article {
+    padding: 40px;
+}

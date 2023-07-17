@@ -1,0 +1,267 @@
+:root {
+    --white: #F1F7FF;
+    --blue: #48ACF0;
+    --green: #23CE6B;
+    --red: #9B191d;
+    --dark: #13171A;
+    --darkGrey: #4A4C4F;
+    --lightGrey: #A3A7AF;
+    --bg-color: #13171A;
+    --card-color: #13171A;
+    --darkpurple: #1b152e;
+    /*get trolled future me*/
+    --pueple: #7b64d5;
+    --darkcyan: #001f27;
+    --cyan: #27d1dd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: none;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    background-color: var(--dark);
+}
+
+#top_container_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--red);
+    width: 85%;
+    height: 100px;
+    color: var(--white);
+    user-select: none;
+    border: 5px solid var(--white);
+}
+
+#johanneum_logo_left {
+    height: 100px;
+    width: auto;
+    position: absolute;
+}
+
+.card {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 0%;
+    border: none;
+    background-color: #FF1B215B;
+    border-left: solid 8px red;
+    user-select: none;
+    transition: all 0.4s;
+    height: 36px;
+    z-index: 999;
+    text-align: center;
+    line-height: 0px;
+    padding-bottom: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .dropdown-content_imp,
+.dropdown-content_imp:hover {
+    display: block;
+    z-index: 999;
+}
+
+.dropbtn_imp {
+    color: white;
+    cursor: pointer;
+    position: relative;
+    font-size: 30px;
+    left: 10%;
+    top: 20%;
+    border: none;
+    background-color: #FF1B215B;
+    border-left: solid 8px red;
+    user-select: none;
+    transition: all 0.4s;
+    height: 36px;
+    z-index: 999;
+}
+
+.dropdown_imp {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+}
+
+.dropdown-content_imp {
+    display: none;
+    position: absolute;
+    background-color: var(--red);
+    min-width: 20rem;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    bottom: 10px;
+    line-height: 32px;
+}
+
+.dropdown-content_imp a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: var(--white);
+    z-index: 999;
+}
+
+.dropdown-content_imp a:hover {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.dropdown_imp:hover .dropdown-content_imp,
+.dropdown-content_imp:hover {
+    display: block;
+}
+
+.dropdown_imp:hover .dropbtn_imp {
+    background-color: var(--green);
+    cursor: pointer;
+    background-color: var(--red);
+    border-left: solid 10px red;
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 1;
+}
+
+.card_main {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    cursor: default;
+    display: block;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+    width: 600px;
+    z-index: 1;
+    top: 100px;
+}
+
+.card_main>.card_main-content {
+    border: solid 3px #FFFFFF;
+    background-color: var(--red);
+    opacity: 0.9;
+    border-radius: 8%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+h3, h4, span {
+    color: rgb(240, 240, 240);
+    font-weight: 400;
+    margin: 0px;
+}
+
+#Sum_1 {
+    z-index: 666;
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+#header {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background: url('background1.svg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#seccion {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('background2.svg');
+    background-size: 80%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-bottom: 0px;
+}
+
+#seccion2 {
+    background-color: var(--dark);
+    padding: 0;
+}
+
+.card_main-content {
+    display: flex;
+    align-items: center;
+}
+
+#card_main-info-title {
+    position: relative;
+    top: 300px;
+    cursor: pointer;
+}
+
+#card_main-image {
+    height: 496px;
+    width: 600px;
+    position: absolute;
+    opacity: 0.4;
+    bottom: 0px;
+    border-radius: 40px;
+    transition: all 1s ease-in-out;
+}
+
+#card_main-image:hover {
+    scale: 80%;
+}
+
+#bottom_foot_contehner {
+    font-size: small;
+    display: flex;
+    background-color: var(--darkpurple);
+    border-left: solid var(--pueple) 4px;
+    height: 200px;
+    margin: 10px;
+    color: white;
+}
+
+#text, address, p {
+    padding-left: 20px;
+    color: white;
+    font-weight: lighter;
+}
+
+h2 {
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
